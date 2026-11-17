@@ -1,0 +1,11 @@
+/home/gic-chhay-sereivesoth/oslab-work/lab1/task2_files
+This is file stone
+This is file candle
+candle.txt
+stone.txt
+stone_copy.txt
+candle_renamed.txt
+stone.txt
+stone_copy.txt
+candle_renamed.txt
+stone.txt
