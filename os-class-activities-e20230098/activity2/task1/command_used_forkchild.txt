@@ -1,0 +1,7 @@
+cd activity2/task1
+gcc -o forkchild forkchild.c
+./forkchild > result_forkchild.txt 2>&1
+ps -ef --forest | grep forkchild
+pstree -p $(pgrep -o forkchild)
+cat result_forkchild.txt
+history | tail -n 20 > command_used_forkchild.txt

@@ -1,0 +1,7 @@
+cd activity2/task4_mq
+gcc -o sender sender.c -lrt
+gcc -o receiver receiver.c -lrt
+./sender
+./receiver > result-mq-ipc.txt
+cat result-mq-ipc.txt
+history | tail -n 20 > command_used_mq.txt
