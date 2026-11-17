@@ -1,0 +1,8 @@
+gcc -o threads_observe ../task2_threads/threads_observe.c -pthread
+./threads_observe &
+OBS_PID=$!
+ps -L -o pid,lwp,nlwp,psr,comm -p $OBS_PID
+ls -l /proc/$OBS_PID/task/
+ps --ppid 2 -o pid,ppid,psr,comm | head -n 20
+pstree -p $OBS_PID
+htop -p $OBS_PID
