@@ -1,0 +1,1 @@
+The first command printed notes/tiger1.txt and notes/tiger2.txt, while the second command notes/tiger[!1]* printed notes/tiger2.txt and notes/tiger.log because [!1] matched any character other than '1' (both '2' and '.') followed by any characters (*), skipping tiger1.txt and tiger12.txt.

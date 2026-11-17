@@ -1,0 +1,11 @@
+mv -- 'payroll may.txt' ../reports/
+mv -- "/home/gic-chhay-sereivesoth/oslab-work/lab2/incoming/audit notes.txt" "/home/gic-chhay-sereivesoth/oslab-work/lab2/reports/audit notes.txt"
+cp -- 'reports/payroll may.txt' 'reports/audit notes.txt' TechCorp/Legal/
+cp -- 'reports/payroll may.txt' TechCorp/Legal/archive/first-original.txt
+cat '../Legal/payroll may.txt'
+cat "/home/gic-chhay-sereivesoth/oslab-work/lab2/TechCorp/Legal/payroll may.txt"
+
+Decision: For step 3, I used relative paths because I was already in the lab2 folder, making the command much shorter to type. Absolute paths would be better in shell scripts or when running commands from an unknown working directory, because they always point to the exact same location regardless of pwd.
+
+Error: cat: 'reports/payroll may.txt': No such file or directory
+Fix: ../../reports/payroll may.txt

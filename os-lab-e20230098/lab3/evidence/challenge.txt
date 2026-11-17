@@ -1,0 +1,5 @@
+1. What link count do the remaining names show after each rm?
+Initially all three names show a link count of 3. After rm -- one.txt, two.txt and three.txt show a link count of 2. After removing a second name, the last remaining name shows a link count of 1.
+
+2. After you delete one.txt, is the data gone? When would it be gone?
+No, the data is still on disk and readable via two.txt and three.txt because the inode still has a link count of 2. The data is only deleted when the link count reaches 0 (all hard links are removed and no process has the file open).
