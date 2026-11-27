@@ -1,0 +1,6 @@
+- **Student Name:** [gic-chhay-sereivesothe]
+- **Student ID:** [e20230098]
+- **Partner Name:** []
+- **Partner Student ID:** []
+- **Server Machine Owner:** []
+- **Server IP Address:** [192.168.71.175]
